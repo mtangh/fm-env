@@ -176,7 +176,7 @@ start() {
     fmanopts="${fmanopts}${fmanopts:+ }-b ${FMANBASE}"
     [ "$fmconfig" = "*" ] ||
     fmanopts="${fmanopts}${fmanopts:+ }-c ${fmconfig}"
-    fmanopts="${fmanopts}${fmanopts:+ }-d ${FMETCDIR}/${fm_fbase}.db"
+    fmanopts="${fmanopts}${fmanopts:+ }-d ${FMETCDIR}/db/${fm_fbase}.db"
     fmanopts="${fmanopts}${fmanopts:+ }-l ${FMLOGDIR}/${fm_fbase}.log"
     echo -n "Starting ${fm_fbase}: "
     [ -e "${FMAN_CMD}" ] && {
